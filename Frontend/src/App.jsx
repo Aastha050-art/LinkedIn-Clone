@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import SignUp from './pages/SignUp'
 import Login from './pages/Login'
 import {userContextData} from './context/UserContext'
-import Network from './pages/network'
+import Network from './pages/Network'
 import Profile from './pages/Profile'
 import Notification from './pages/Notification'
 
