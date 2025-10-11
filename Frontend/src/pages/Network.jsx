@@ -5,7 +5,7 @@ import pfofile from '../assets/pfofile.webp'
 import { authDataContext } from '../context/Authcontext'
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { RxCrossCircled } from "react-icons/rx";
-import io from "socket.io-client
+import io from "socket.io-client"
 const socket=io("https://backend-xnps.onrender.com")
 
 
