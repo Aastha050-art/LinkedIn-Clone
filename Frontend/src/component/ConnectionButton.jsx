@@ -6,7 +6,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 
-const socket = io("http://localhost:8000")
+const socket = io("https://backend-xnps.onrender.com")
 function ConnectionButton({ userId }) {
   let navigate=useNavigate()
   let { serverUrl } = useContext(authDataContext)
