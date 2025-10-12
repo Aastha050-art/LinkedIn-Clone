@@ -18,14 +18,14 @@ const app=express();
 let server=http.createServer(app)
  export const io=new Server(server,{
     cors:({
-    origin:" https://linkedin-frontend-zmcr.onrender.com",
+    origin:"https://linkedin-frontend-zmcr.onrender.com",
     credentials:true,
 })
 })
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin:" https://linkedin-frontend-zmcr.onrender.com",
+    origin:"https://linkedin-frontend-zmcr.onrender.com",
     credentials:true,
 }))
 let port=process.env.PORT||5000
