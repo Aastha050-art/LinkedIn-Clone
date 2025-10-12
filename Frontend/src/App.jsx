@@ -7,6 +7,16 @@ import {userContextData} from './context/UserContext'
 import Network from './pages/Network'
 import Profile from './pages/Profile'
 import Notification from './pages/Notification'
+import axios from "axios"
+axios.defaults.baseURL="https://backend-xnps.onrender.com";
+axios.defaults.withCredentials = true;
+axios.interceptors.request.use((req) =>{
+  const token = localStorage.getItem("token");
+  if(token){
+    req.headers.Authorization = 'Bearer ${token};
+  }
+  return req;
+});
 
 function App() {
   let {userData}=useContext(userContextData)
