@@ -27,7 +27,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     origin:["https://linkedin-frontend-rruu.onrender.com"],
-     method:["GET", "POST"]
+     method:["GET", "POST"],
     credentials:true,
 }))
 let port=process.env.PORT||5000
