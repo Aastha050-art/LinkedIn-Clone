@@ -7,7 +7,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { io } from "socket.io-client"
 
-export let socket=io("https://backend-xnps.onrender.com")
+export let socket=io("https://linkedin-backend-su7g.onrender.com")
 
 function UserContext({children}) {
   let navigate=useNavigate()
