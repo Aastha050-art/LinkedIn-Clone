@@ -15,6 +15,11 @@ import notificationRouter from "./routes/notification.routes.js";
 dotenv.config()
 
 const app=express();
+app.use(cors({
+    origin:["https://linkedin-frontend-rruu.onrender.com"],
+     method:["GET", "POST"],
+    credentials:true,
+}))
 let server=http.createServer(app)
  export const io=new Server(server,{
     cors:({
@@ -25,11 +30,7 @@ let server=http.createServer(app)
 })
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({
-    origin:["https://linkedin-frontend-rruu.onrender.com"],
-     method:["GET", "POST"],
-    credentials:true,
-}))
+
 let port=process.env.PORT||5000
 app.use("/api/auth",authRouter)
 app.use("/api/user",userRouter)
