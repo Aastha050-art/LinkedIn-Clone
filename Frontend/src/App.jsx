@@ -8,7 +8,7 @@ import Network from './pages/Network'
 import Profile from './pages/Profile'
 import Notification from './pages/Notification'
 import axios from "axios"
-axios.defaults.baseURL="https://backend-xnps.onrender.com";
+axios.defaults.baseURL="https://linkedin-backend-su7g.onrender.com";
 axios.defaults.withCredentials = true;
 axios.interceptors.request.use((req) =>{
   const token = localStorage.getItem("token");
