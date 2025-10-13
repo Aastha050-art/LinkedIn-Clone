@@ -19,7 +19,7 @@ let server=http.createServer(app)
  export const io=new Server(server,{
     cors:({
     origin:["https://linkedin-frontend-rruu.onrender.com"],
-     methods:["GET", "POST", "PUT", "DELETE"]
+     methods:["GET", "POST", "PUT", "DELETE"],
     credentials:true,
 })
 })
