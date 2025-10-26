@@ -15,10 +15,10 @@ import notificationRouter from "./routes/notification.routes.js";
 dotenv.config()
 
 const app=express();
-.use(cors({
+app.use(cors({
     origin:["https://linkedin-frontend-rruu.onrender.com"],
      method:["GET", "POST"],
-    credentials:false,
+    credentials:true,
 }))
 let server=http.createServer(app)
  export const io=new Server(server,{
