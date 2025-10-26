@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import SignUp from './pages/SignUp'
 import Login from './pages/Login'
-
+import {userContextData} from './context/UserContext'
 import Network from './pages/Network'
 import Profile from './pages/Profile'
 import Notification from './pages/Notification'
