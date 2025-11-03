@@ -16,14 +16,14 @@ dotenv.config()
 
 const app=express();
 app.use(cors({
-    origin:["https://linkedin-frontend-uy73.onrender.com"],
+    origin:["https://linkedin-clone-45w2.onrender.com"],
      method:["GET", "POST"],
     credentials:true,
 }))
 let server=http.createServer(app)
  export const io=new Server(server,{
     cors:({
-    origin:["https://linkedin-frontend-uy73.onrender.com"],
+    origin:["https://linkedin-clone-45w2.onrender.com"],
      methods:["GET", "POST", "PUT", "DELETE"],
     credentials:true,
 })
