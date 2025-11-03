@@ -6,7 +6,7 @@ import { authDataContext } from '../context/Authcontext'
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { RxCrossCircled } from "react-icons/rx";
 import io from "socket.io-client"
-const socket=io("https://linkedin-backend-su7g.onrender.com")
+const socket=io("https://linkedin-backend-project.onrender.com")
 
 
 
